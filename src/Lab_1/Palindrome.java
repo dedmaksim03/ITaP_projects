@@ -1,3 +1,5 @@
+package Lab_1;
+
 // Класс определяет, является ли заданная строка палиндромом
 public class Palindrome {
     public static void main(String[] args){
