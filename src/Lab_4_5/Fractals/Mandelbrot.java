@@ -1,12 +1,15 @@
-package Lab_4;
+package Lab_4_5.Fractals;
+
+import Lab_4_5.Complex;
+import Lab_4_5.FractalGenerator;
 
 import java.awt.geom.Rectangle2D;
 
-public class Mandelbrot extends FractalGenerator{
+public class Mandelbrot extends FractalGenerator {  // Фрактал Мандельброта
     public static final int MAX_ITERATIONS = 2000; // Предельное количество итераций
 
     @Override
-    public void getInitialRange(Rectangle2D.Double range){  // Определеяет размер фрактала и его координаты
+    public void getInitialRange(Rectangle2D.Double range){  // Определеяет начальный диапазон для фрактала
         range.x = -2;
         range.y = -1.5;
         range.width = 3;
@@ -24,5 +27,10 @@ public class Mandelbrot extends FractalGenerator{
         }
         if (i == MAX_ITERATIONS) return -1;
         return i;
+    }
+
+    @Override
+    public String toString(){
+        return "Mandelbrot";
     }
 }

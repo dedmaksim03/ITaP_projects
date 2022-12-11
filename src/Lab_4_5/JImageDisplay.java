@@ -1,11 +1,11 @@
-package Lab_4;
+package Lab_4_5;
 
 import java.awt.*;
 import javax.swing.*;
 import java.awt.image.BufferedImage;
 
 public class JImageDisplay extends JComponent{
-    private BufferedImage image; // Управляет изображением
+    public BufferedImage image; // Управляет изображением
     private int width;
     private int height;
 
